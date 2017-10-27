@@ -4,7 +4,7 @@ module Pliny::Helpers
       content_type :json, charset: 'utf-8'
       p object
       out = MultiJson.encode(object, pretty: params[:pretty] == 'true' || Config.pretty_json)
-      p out
+      p ['asdf encoded', out]
       out
     end
   end
